@@ -32,9 +32,9 @@
         android:id="@+id/navToProfile3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="email"
-        android:textColor="@color/white"
-        android:textSize="20dp"
+        android:text="Мы приготовили для вас актуальную информацию о погоде"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navToProfile2" />

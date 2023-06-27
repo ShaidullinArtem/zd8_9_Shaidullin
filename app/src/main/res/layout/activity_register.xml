@@ -26,6 +26,7 @@
         android:backgroundTint="@color/gray"
         android:ems="10"
         android:hint="Email"
+        android:textColor="@color/white"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,24 +42,11 @@
         android:backgroundTint="@color/gray"
         android:textColorHint="@color/gray"
         android:hint="Password"
+        android:textColor="@color/white"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerEmailField" />
-
-    <EditText
-        android:id="@+id/registerPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/gray"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textColorHint="@color/gray"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPasswordField" />
 
     <EditText
         android:id="@+id/registerConfirmPassword"
@@ -67,7 +55,8 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/gray"
         android:ems="10"
-        android:hint="Password"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
         android:inputType="textPassword"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"

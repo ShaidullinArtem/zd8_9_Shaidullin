@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:background="@color/primary">
 
     <ImageView
         android:id="@+id/weatherImage"
@@ -12,46 +14,65 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/weatherTitle"
-        android:layout_width="278dp"
+        android:id="@+id/weatherCity"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="0dp"
-        android:layout_toEndOf="@+id/weatherImage"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/weatherCity"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_below="@+id/weatherTitle"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="11dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
         android:layout_toEndOf="@+id/weatherImage"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/weatherTemp"
-        android:layout_width="96dp"
+        android:textSize="8sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/weatherCity"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="25dp"
         android:layout_toEndOf="@+id/weatherImage"
-        android:text="TextView" />
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/weatherSeason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weatherTemp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@+id/weatherImage"
+        android:text="TextView"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/weatherSeasonTemp"
-        android:layout_width="149dp"
+        android:layout_width="wrap_content"
+        android:textSize="8sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weatherTemp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/weatherWind"
+        android:layout_toEndOf="@+id/weatherTemp"
+        android:text="TextView"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/weatherWind"
+        android:textSize="8sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/weatherTemp"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="-3dp"
-        android:layout_marginEnd="-2dp"
-        android:layout_toEndOf="@+id/weatherTemp"
+        android:layout_marginTop="1dp"
+        android:textColor="@color/white"
+        android:layout_marginEnd="14dp"
         android:text="TextView" />
+
 </RelativeLayout>

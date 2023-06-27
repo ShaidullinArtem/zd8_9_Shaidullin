@@ -24,7 +24,7 @@ class Register : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         val email = findViewById<EditText>(R.id.registerEmailField).text
-        val password = findViewById<EditText>(R.id.registerPassword).text
+        val password = findViewById<EditText>(R.id.registerPasswordField).text
         val confirmPassword = findViewById<EditText>(R.id.registerConfirmPassword).text
 
         val signUpBtn = findViewById<Button>(R.id.signUpBtn)

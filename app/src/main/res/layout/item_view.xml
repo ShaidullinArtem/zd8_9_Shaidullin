@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/weatherImage"
+        android:layout_width="116dp"
+        android:layout_height="109dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/weatherTitle"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/weatherImage"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/weatherCity"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/weatherTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="11dp"
+        android:layout_toEndOf="@+id/weatherImage"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/weatherTemp"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weatherCity"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/weatherImage"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/weatherSeasonTemp"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weatherTemp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_toEndOf="@+id/weatherTemp"
+        android:text="TextView" />
+</RelativeLayout>
